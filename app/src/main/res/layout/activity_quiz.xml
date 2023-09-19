@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondbackground"
+    tools:context=".QuizActivity">
+
+    <ImageView
+        android:id="@+id/categoryimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/avtar"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:srcCompat="@drawable/quiztime" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Вопрос:"
+        android:textColor="@color/textColorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/categoryimg"
+        app:layout_constraintStart_toStartOf="@+id/categoryimg"
+        app:layout_constraintTop_toBottomOf="@+id/categoryimg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/avtar"
+            tools:src="@drawable/avtar" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Arsenty"
+            android:textColor="@color/textColorWhite"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/CoinPayment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coin"
+            tools:src="@drawable/coin" />
+
+        <TextView
+            android:id="@+id/Coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="0"
+            android:textColor="@color/textColorWhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Кто ты?"
+        android:textColor="@color/textColorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Выберите один вариант ответа"
+        android:textColor="@color/textColorWhite"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/question"
+        app:layout_constraintStart_toStartOf="@+id/question"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/buttonWhite"
+        android:text="Button"
+        android:textColor="@color/textColorBlack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/buttonWhite"
+        android:text="Button"
+        android:textColor="@color/textColorBlack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/option3"
+        app:layout_constraintStart_toStartOf="@+id/option3"
+        app:layout_constraintTop_toBottomOf="@+id/option3" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/buttonWhite"
+        android:text="Button"
+        android:textColor="@color/textColorBlack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/option2"
+        app:layout_constraintStart_toStartOf="@+id/option2"
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/buttonWhite"
+        android:text="Button"
+        android:textColor="@color/textColorBlack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/option1"
+        app:layout_constraintStart_toStartOf="@+id/option1"
+        app:layout_constraintTop_toBottomOf="@+id/option1" />
+
+    <LinearLayout
+
+        android:id="@+id/winner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/secondbackground"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/win" />
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Вы выйграли"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/sorry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/secondbackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/sorry" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Вы проиграли"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+
+
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
